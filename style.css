@@ -5,3 +5,9 @@ body {
 	text-align: center;
 	font-size: 120%;
 }
+
+button {
+	background-color: black;
+	color: lawngreen;
+	border: lawngreen;
+}
