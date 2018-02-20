@@ -12,8 +12,29 @@ function replace(phtml)
   document.getElementById("display").innerHTML = phtml;
 }
 
-function buttons()
+function all()
 {
-  h = "";
-  add("<button onclick=\"num()\">Numbers</button>");
+  replace("Numbers: " + numbers.length.toString() + "<br> Letters: " + letters.length.toString() + "<br> Colors: " + colors.length.toString() + "<br> Other: " + other.length.toString());
 }
+
+function numbers()
+{
+  replace(numbers);
+}
+
+function letters()
+{
+  replace(letters);
+}
+
+function colors()
+{
+  replace(colors);
+}
+
+function other()
+{
+  replace(other);
+}
+
+replace("Click a button above to get results.");
